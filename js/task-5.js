@@ -8,7 +8,6 @@ let message;
 if (country === null) {
   message = 'Вы не выбрали страну!';
 } else {
-  let i;
   switch (country.toLowerCase()) {
     case deliveryCountry[0]:
       price = deliveryPrice[0];
@@ -28,7 +27,6 @@ if (country === null) {
     default:
       price = 0;
       message = `В ${country} доставка не доступна`;
-      break;
   }
 }
 
